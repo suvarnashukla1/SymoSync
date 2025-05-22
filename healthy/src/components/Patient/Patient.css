@@ -1,0 +1,41 @@
+#Home {
+  line-height: 1.7;
+}
+#Home h2 {
+  color: #005ea2;
+  transition: ease 0.2s;
+}
+
+#Patient2 {
+  line-height: 1.7;
+}
+.FormElement {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+}
+.radioButtonDiv {
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+.usa-radio__label{
+ margin-right: 20px;
+  justify-content: space-between;
+}
+@media (max-width: 63.938em) {
+  .radioButtonDiv {
+	display: flex;
+    justify-content: space-between;
+    align-items: left;
+    flex-direction: column;
+  }
+  
+  .FormElement {
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+  }
+}
+

@@ -1,0 +1,12 @@
+.log {
+    height: 80px;
+    width: 80px;
+}
+
+@media (max-width: 63.99em) {
+    .log {
+        height: 48px;
+        width: 48px;
+        margin-left: 1rem;
+    }
+}
