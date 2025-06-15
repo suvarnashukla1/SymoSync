@@ -1,5 +1,6 @@
 #Symptoms {
   line-height: 1.7;
+  border:solid 0.4rem black;
 }
 .searchSymptomsInput {
   border: none;

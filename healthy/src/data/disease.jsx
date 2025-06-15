@@ -2,19 +2,27 @@ export const Diseases = {
   "Vocal cord polyp": [
     "Hoarseness",
     "Vocal Changes",
-    "Vocal Fatigue"
+    "Vocal Fatigue",
+    "Chronic throat clearing", 
+    "Pain with speaking",
+    "Reduced pitch range"
   ],
   "Turner syndrome": [
     "Short stature",
     "Gonadal dysgenesis",
     "Webbed neck",
-    "Lymphedema"
+    "Lymphedema",
+    "Shield-shaped chest",
+    "Delayed puberty",
+    "Hearing loss",
+    "Cardiac anomalies"
   ],
   "Cryptorchidism": [
     "Absence or undescended testicle(s)",
     "Empty scrotum",
     "Smaller or underdeveloped testicle(s)",
-    "Inguinal hernia"
+    "Inguinal hernia",
+    "Fertility issues"
   ],
   "Ethylene glycol poisoning-1": [
     "Nausea",
@@ -23,7 +31,9 @@ export const Diseases = {
     "General malaise",
     "Weakness",
     "Increased thirst",
-    "Frequent urination"
+    "Frequent urination",
+    "Slurred speech",
+    "Ataxia"
   ],
   "Ethylene glycol poisoning-2": [
     "Metabolic acidosis",
@@ -32,20 +42,27 @@ export const Diseases = {
     "Confusion",
     "Headache",
     "Dizziness",
-    "Seizures"
+    "Seizures",
+    "Coma",
+    "Hypocalcemia (tetany)"
   ],
   "Ethylene glycol poisoning-3": [
     "Decreased urine output",
     "Swelling in legs and ankles",
     "Signs of fluid overload",
-    "Severe kidney injury"
+    "Severe kidney injury",
+    "Flank pain",
+    "Crystalluria"
   ],
   "Atrophic vaginitis": [
     "Vaginal dryness",
     "Vaginal burning",
     "Frequent urination",
     "Urinary tract infections",
-    "Painful intercourse"
+    "Painful intercourse",
+    "Vaginal spotting",
+    "Dysuria",
+    "Urgency"
   ],
   "Fracture": [
     "Pain",
@@ -53,7 +70,9 @@ export const Diseases = {
     "Bruising",
     "Deformity",
     "Difficulty moving",
-    "Loss of function"
+    "Loss of function",
+    "Crepitus",
+    "Visible bone fragments"
   ],
   "Cellulitis": [
     "Redness",
@@ -61,16 +80,27 @@ export const Diseases = {
     "Tenderness",
     "Swelling",
     "Skin changes",
-    "Lymph node enlargement"
+    "Lymph node enlargement",
+    "Fever",
+    "Warmth",
+    "Erythema spreading"
   ],
   "Eye alignment disorder": [
     "Double vision",
     "Eye fatigue",
     "Poor depth perception",
-    "Head tilting"
+    "Head tilting",
+    "Squinting",
+    "Headaches",
+    "Difficulty reading"
   ],
   "Headache after lumbar puncture": [
-    "Throbbing headache"
+    "Throbbing headache",
+    "Worsening with upright position",
+    "Relief when lying flat",
+    "Neck stiffness",
+    "Photophobia",
+    "Tinnitus"
   ],
   "Pyloric stenosis": [
     "Persistent hunger",
@@ -78,21 +108,30 @@ export const Diseases = {
     "Dehydration",
     "Visible peristalsis",
     "Palpable mass",
-    "Fussiness"
+    "Fussiness",
+    "Metabolic alkalosis",
+    "Olive-shaped abdominal mass"
   ],
   "Adenoid cystic carcinoma": [
     "Lump",
     "Swelling",
     "Facial numbness",
-    "Tingling"
+    "Tingling",
+    "Persistent pain",
+    "Difficulty swallowing",
+    "Hoarseness (if laryngeal)"
   ],
   "Pleomorphic adenoma": [
     "Painless lump or swelling",
-    "Facial changes"
+    "Facial changes",
+    "Slow growth",
+    "Firm mobile mass"
   ],
   "Warthin tumor": [
     "Painless lump or swelling",
-    "Facial changes"
+    "Facial changes",
+    "Bilateral in 10% cases",
+    "Smoking association"
   ],
   "Mucoepidermoid carcinoma": [
     "Lump",
@@ -100,80 +139,104 @@ export const Diseases = {
     "Difficulty swallowing and speaking",
     "Pain",
     "Facial weakness",
-    "Facial paralysis"
+    "Facial paralysis",
+    "Ulceration (high-grade)"
   ],
   "Acinic cell carcinoma": [
     "Lump",
     "Swelling",
-    "Facial changes"
+    "Facial changes",
+    "Pain (in 1/3 cases)",
+    "Slow progression"
   ],
   "Mucocele": [
-    "Painless fluid-filled swelling in the oral cavity"
+    "Painless fluid-filled swelling in the oral cavity",
+    "Bluish translucent appearance",
+    "Common on lower lip",
+    "Recurrent rupture"
   ],
   "Osteochondrosis": [
     "Joint pain",
     "Stiffness",
     "Swelling",
-    "Reduced range of motion"
+    "Reduced range of motion",
+    "Mechanical symptoms",
+    "Joint locking"
   ],
   "Sialolithiasis": [
     "Swelling",
     "Pain",
     "Tenderness",
-    "Difficulty eating"
+    "Difficulty eating",
+    "Worsening with meals",
+    "Purulent discharge"
   ],
   "Submandibular stones": [
     "Swelling",
     "Pain",
     "Dry mouth",
-    "Bad taste"
+    "Bad taste",
+    "Colicky pain",
+    "Gland enlargement"
   ],
   "Parotid stones": [
     "Swelling",
     "Pain",
     "Dry mouth",
-    "Bad taste"
+    "Bad taste",
+    "Preauricular tenderness"
   ],
   "Recurrent salivary stones": [
-    "Frequent episodes of stone formation"
+    "Frequent episodes of stone formation",
+    "Chronic glandular swelling",
+    "Fibrosis"
   ],
   "Wharton's duct stones": [
     "Swelling",
     "Pain",
     "Dry mouth",
-    "Bad taste"
+    "Bad taste",
+    "Floor of mouth tenderness"
   ],
   "Mumps": [
     "Swollen salivary glands (usually parotid)",
     "Fever",
     "Headache",
-    "Fatigue"
+    "Fatigue",
+    "Orchitis (in post-pubertal males)",
+    "Meningitis signs"
   ],
   "Ludwig's angina": [
     "Severe swelling of the floor of the mouth",
     "Fever",
     "Difficulty swallowing",
-    "Drooling"
-  ],
-  "Mucocele (repeat)": [
-    "Painless swelling, usually on the lower lip or floor of the mouth"
+    "Drooling",
+    "Trismus",
+    "Airway compromise"
   ],
   "Abscess": [
     "Swelling",
     "Pain",
     "Redness",
     "Fever",
-    "Pus formation"
+    "Pus formation",
+    "Fluctuance",
+    "Systemic toxicity"
   ],
   "Sjögren's syndrome": [
     "Dry mouth and eyes",
     "Fatigue",
     "Joint pain",
-    "Dry skin"
+    "Dry skin",
+    "Dental caries",
+    "Parotid enlargement",
+    "Dyspareunia"
   ],
   "Open-Angle Glaucoma": [
     "Gradual loss of peripheral vision",
-    "Tunnel vision"
+    "Tunnel vision",
+    "Asymptomatic in early stages",
+    "Optic nerve cupping"
   ],
   "Angle-Closure Glaucoma": [
     "Severe eye pain",
@@ -181,641 +244,320 @@ export const Diseases = {
     "Blurred vision",
     "Halos around lights",
     "Nausea",
-    "Vomiting"
+    "Vomiting",
+    "Fixed mid-dilated pupil"
   ],
   "Normal-Tension Glaucoma": [
     "Gradual loss of vision",
-    "Visual field defects"
+    "Visual field defects",
+    "Optic nerve damage despite normal IOP"
   ],
   "Congenital Glaucoma": [
     "Cloudy or hazy eyes",
     "Excessive tearing",
-    "Sensitivity to light"
+    "Sensitivity to light",
+    "Enlarged eyeballs (buphthalmos)",
+    "Corneal edema"
   ],
   "Secondary Glaucoma": [
-    "Varies depending on the underlying cause"
+    "Varies depending on the underlying cause",
+    "Uveitic: eye redness/pain",
+    "Neovascular: rubeosis iridis"
   ],
   "Pigmentary Glaucoma": [
     "Blurred vision",
     "Halos around lights",
-    "Eye pain"
+    "Eye pain",
+    "Krukenberg spindle on exam",
+    "Transillumination defects"
   ],
   "Exfoliation Glaucoma": [
     "Elevated intraocular pressure",
-    "Visual field loss"
+    "Visual field loss",
+    "White dandruff-like material on lens"
   ],
   "Ocular Hypertension": [
-    "Elevated intraocular pressure without optic nerve damage"
+    "Elevated intraocular pressure without optic nerve damage",
+    "Asymptomatic",
+    "Risk factor for glaucoma"
   ],
   "Low-Tension Glaucoma": [
     "Gradual loss of vision",
-    "Visual field defects"
+    "Visual field defects",
+    "Nocturnal hypotension association"
   ],
   "Anorexia Nervosa": [
     "Extreme weight loss",
     "Fear of gaining weight",
-    "Distorted body image"
+    "Distorted body image",
+    "Amenorrhea",
+    "Lanugo hair",
+    "Bradycardia"
   ],
   "Bulimia Nervosa": [
     "Recurrent episodes of binge eating",
-    "Purging behaviors"
+    "Purging behaviors",
+    "Dental erosion",
+    "Russell's sign (hand calluses)",
+    "Electrolyte imbalances"
   ],
   "Binge Eating Disorder": [
-    "Recurrent episodes of binge eating without compensatory behaviors"
+    "Recurrent episodes of binge eating without compensatory behaviors",
+    "Eating rapidly",
+    "Eating until uncomfortably full",
+    "Guilt after bingeing"
   ],
   "Avoidant/Restrictive Food Intake Disorder (ARFID)": [
     "Avoidance or restriction of certain foods or entire food groups",
-    "Significant weight loss or failure to gain weight"
+    "Significant weight loss or failure to gain weight",
+    "Nutritional deficiencies",
+    "No body image disturbance"
   ],
   "Other Specified Feeding or Eating Disorder (OSFED)": [
-    "Symptoms that do not meet the full criteria for a specific eating disorder"
+    "Symptoms that do not meet the full criteria for a specific eating disorder",
+    "Atypical anorexia",
+    "Subthreshold bulimia"
   ],
   "Orthorexia Nervosa": [
     "Obsessive focus on clean eating",
-    "Healthy food choices"
+    "Healthy food choices",
+    "Social isolation",
+    "Malnutrition"
   ],
   "Pica": [
-    "Persistent consumption of non-food substances"
+    "Persistent consumption of non-food substances",
+    "Geophagia (clay/dirt)",
+    "Pagophagia (ice)",
+    "Lead poisoning risk"
   ],
   "Rumination Disorder": [
-    "Repeated regurgitation and re-chewing of food"
+    "Repeated regurgitation and re-chewing of food",
+    "Effortless regurgitation",
+    "Weight loss",
+    "No nausea"
   ],
   "Transient ischemic attack": [
-    "Sudden onset of neurological symptoms that resolve within 24 hours"
+    "Sudden onset of neurological symptoms that resolve within 24 hours",
+    "Focal weakness",
+    "Aphasia",
+    "Amaurosis fugax",
+    "ABCD2 score predictors"
   ],
   "Pyelonephritis": [
     "Fever",
     "Chills",
     "Back or flank pain",
-    "Frequent urination"
+    "Frequent urination",
+    "Costovertebral angle tenderness",
+    "Bacteremia signs",
+    "Nausea/vomiting"
   ],
+
   "Rotator Cuff Injury": [
-    "Shoulder pain",
-    "Weakness or loss of strength",
-    "Limited range of motion",
-    "Shoulder stiffness"
+    "Shoulder pain (worse at night or when lifting arms)",
+    "Weakness or loss of strength (especially when reaching overhead)",
+    "Limited range of motion (difficulty combing hair or reaching behind back)",
+    "Shoulder stiffness",
+    "Clicking or popping sensations",
+    "Pain radiating to the arm"
   ],
   "Fibromyalgia": [
-    "Widespread musculoskeletal pain",
-    "Fatigue",
-    "Sleep disturbances"
+    "Widespread musculoskeletal pain (lasting ≥3 months)",
+    "Fatigue (unrelieved by sleep)",
+    "Sleep disturbances (insomnia/non-restorative sleep)",
+    "Cognitive difficulties ('fibro fog'—memory lapses, poor concentration)",
+    "Mood disorders (anxiety/depression)",
+    "Headaches/migraines",
+    "Irritable bowel syndrome (IBS)-like symptoms"
   ],
   "Chronic Fatigue Syndrome": [
-    "Extreme fatigue",
-    "Cognitive difficulties",
-    "Unrefreshing sleep"
+    "Extreme fatigue (worsened by physical/mental activity, not improved by rest)",
+    "Cognitive difficulties (impaired memory, focus)",
+    "Unrefreshing sleep",
+    "Post-exertional malaise (PEM)—symptoms worsen after activity",
+    "Muscle/joint pain without swelling",
+    "Sore throat",
+    "Tender lymph nodes"
   ],
   "Complex Regional Pain Syndrome (CRPS)": [
-    "Severe and persistent pain",
-    "Changes in skin color or temperature",
-    "Swelling",
-    "Stiffness"
+    "Severe and persistent burning/throbbing pain (disproportionate to injury)",
+    "Changes in skin color (red, purple, or blotchy) or temperature (hot/cold)",
+    "Swelling (edema)",
+    "Stiffness",
+    "Hypersensitivity to touch (allodynia)",
+    "Abnormal sweating",
+    "Nail/hair growth changes"
   ],
   "Myofascial Pain Syndrome": [
-    "Localized muscle pain",
-    "Trigger points"
+    "Localized muscle pain (trigger points—knots in taut muscle bands)",
+    "Referred pain (pain felt in distant areas from trigger points)",
+    "Muscle stiffness",
+    "Sleep disturbances due to pain"
   ],
   "Chronic Migraine": [
-    "Recurrent, disabling migraines"
+    "Recurrent, disabling migraines (≥15 headache days/month, ≥8 migraine days)",
+    "Throbbing/pulsating pain (often unilateral)",
+    "Nausea/vomiting",
+    "Photophobia (light sensitivity)",
+    "Phonophobia (sound sensitivity)",
+    "Aura (visual disturbances, tingling) in some cases"
   ],
   "Neuropathic Pain": [
     "Shooting or burning pain",
-    "Tingling or numbness"
+    "Tingling or numbness ('pins and needles')",
+    "Hypersensitivity to touch",
+    "Loss of coordination",
+    "Muscle weakness"
   ],
   "Gestational Diabetes": [
-    "High blood sugar levels during pregnancy"
-  ],
-  "Pregnancy-Induced Hypertension": [
-    "High blood pressure during pregnancy"
-  ],
-  "Gestational Hypertension": [
-    "High blood pressure without proteinuria"
+    "High blood sugar levels during pregnancy",
+    "Increased thirst (polydipsia)",
+    "Frequent urination (polyuria)",
+    "Fatigue",
+    "Blurred vision",
+    "Recurrent infections (e.g., UTIs)"
   ],
   "Preeclampsia": [
-    "High blood pressure",
-    "Proteinuria",
-    "Swelling",
-    "Headaches",
-    "Visual disturbances"
+    "High blood pressure (≥140/90 mmHg after 20 weeks)",
+    "Proteinuria (≥300 mg/24-hour urine)",
+    "Swelling (edema—face/hands)",
+    "Headaches (severe, unrelieved by analgesics)",
+    "Visual disturbances (blurring, flashing lights)",
+    "Upper abdominal pain (epigastric/RUQ)",
+    "Shortness of breath",
+    "Decreased urine output"
   ],
   "Hyperemesis Gravidarum": [
-    "Severe nausea and vomiting during pregnancy"
+    "Severe nausea and vomiting during pregnancy (leading to weight loss ≥5%)",
+    "Dehydration (dry mouth, reduced urine output)",
+    "Electrolyte imbalances (weakness, dizziness)",
+    "Ketosis (fruity breath odor)",
+    "Hypersensitivity to smells"
   ],
   "Urinary Tract Infection (UTI)": [
-    "Painful urination",
-    "Frequent urination",
-    "Pelvic pain",
-    "Cloudy urine"
+    "Painful urination (dysuria)",
+    "Frequent urination (urgency)",
+    "Pelvic pain (suprapubic discomfort)",
+    "Cloudy or foul-smelling urine",
+    "Hematuria (blood in urine)",
+    "Low-grade fever"
   ],
   "Anemia": [
     "Fatigue",
     "Weakness",
-    "Pale skin",
-    "Shortness of breath"
+    "Pale skin (pallor) or conjunctiva",
+    "Shortness of breath (dyspnea)",
+    "Dizziness/lightheadedness",
+    "Cold hands/feet",
+    "Brittle nails",
+    "Pica (craving non-food items like ice)"
   ],
   "Pregnancy-Related Back Pain": [
-    "Lower back pain",
-    "Discomfort in pelvic area"
+    "Lower back pain (mechanical, worsens with activity)",
+    "Discomfort in pelvic area (symphysis pubis dysfunction)",
+    "Radiation to buttocks/thighs",
+    "Stiffness after prolonged sitting"
   ],
   "Round Ligament Pain": [
-    "Sharp or aching pain in the lower abdomen or groin"
+    "Sharp or aching pain in lower abdomen/groin (often unilateral)",
+    "Pain triggered by sudden movements (rolling over, standing)",
+    "Brief spasms (seconds to minutes)",
+    "No associated bleeding"
   ],
   "Placenta Previa": [
-    "Vaginal bleeding",
-    "Painless bleeding in the third trimester"
+    "Vaginal bleeding (bright red, painless, often in 3rd trimester)",
+    "Uterine contractions (sometimes)",
+    "Soft, non-tender uterus on exam",
+    "Fetal malpresentation (breech/transverse lie)"
   ],
   "Carpal Tunnel Syndrome": [
-    "Tingling",
-    "Numbness",
-    "Pain in hand and fingers"
+    "Tingling/numbness (thumb, index, middle fingers—'median nerve distribution')",
+    "Pain in hand/wrist (radiating up arm)",
+    "Weakness (difficulty gripping objects)",
+    "Symptoms worse at night",
+    "Shaking hands relieves discomfort"
   ],
   "Sciatica": [
-    "Sharp pain",
-    "Tingling",
-    "Numbness radiating from lower back"
+    "Sharp pain radiating from lower back to leg (following sciatic nerve path)",
+    "Tingling/numbness (leg/foot)",
+    "Weakness in affected leg",
+    "Worsened by sitting/coughing"
   ],
   "Varicose Veins": [
-    "Enlarged swollen veins, often in legs"
+    "Enlarged, swollen veins (often legs, bluish/purple)",
+    "Aching/heaviness in legs",
+    "Itching around veins",
+    "Worsened by prolonged standing",
+    "Skin discoloration/ulcers (chronic cases)"
   ],
   "Hemorrhoids": [
-    "Swollen, itchy, or painful veins in rectal area"
+    "Swollen, itchy, or painful veins in rectal area",
+    "Bright red blood on toilet paper/stool",
+    "Protruding lumps (external hemorrhoids)",
+    "Mucus discharge"
   ],
   "Gestational Cholestasis": [
-    "Itchy skin, particularly hands and feet"
-  ],
-  "Liver Cancer": [
-    "Abdominal pain",
-    "Jaundice",
-    "Unexplained weight loss",
-    "Loss of appetite"
-  ],
-  "Atelectasis": [
-    "Difficulty breathing",
-    "Rapid breathing",
-    "Chest pain"
-  ],
-  "Ectopic Pregnancy": [
-    "Vaginal bleeding",
-    "Abdominal pain or cramping",
-    "Shoulder pain (if fallopian tube ruptures)"
-  ],
-  "Choledocholithiasis": [
-    "Abdominal pain (upper right quadrant)",
-    "Jaundice",
+    "Itchy skin (pruritus—palms/soles, worse at night)",
     "Dark urine",
     "Pale stools",
-    "Nausea",
-    "Vomiting"
-  ],
-  "Cirrhosis": [
+    "Jaundice (rare)",
     "Fatigue",
-    "Jaundice",
-    "Abdominal swelling (ascites)",
-    "Easy bruising and bleeding",
-    "Confusion",
     "Loss of appetite"
   ],
-  "Thoracic Aortic Aneurysm": [
-    "Chest or back pain",
-    "Shortness of breath",
-    "Hoarseness",
-    "Difficulty swallowing"
-  ],
-  "Subdural hemorrhage": [
-    "Headache",
-    "Confusion",
-    "Dizziness",
-    "Nausea or vomiting",
-    "Seizures",
-    "Weakness or numbness"
-  ],
-  "Congenital rubella": [
-    "Developmental delays",
-    "Intellectual disability",
-    "Hearing loss",
-    "Vision problems",
-    "Heart defects",
-    "Liver or spleen damage"
-  ],
-  "Diabetic retinopathy": [
-    "Blurred or distorted vision",
-    "Floaters",
-    "Impaired color vision",
-    "Dark or empty areas in visual field"
-  ],
-  "Fibromyalgia (repeat)": [
-    "Widespread musculoskeletal pain",
-    "Fatigue",
-    "Sleep disturbances",
-    "Cognitive difficulties (fibro fog)",
-    "Mood disorders"
-  ],
-  "Ischemia of the Bowel": [
-    "Severe abdominal pain",
-    "Bloody stools",
-    "Diarrhea",
-    "Nausea",
-    "Vomiting",
-    "Fever",
-    "Rapid heart rate",
-    "Low blood pressure"
-  ],
-  "Fetal Alcohol Syndrome": [
-    "Growth deficiencies",
-    "Facial abnormalities",
-    "Developmental delays",
-    "Intellectual disability"
-  ],
-  "Peritonitis": [
-    "Severe abdominal pain",
-    "Tenderness",
-    "Bloating",
-    "Fever",
-    "Nausea",
-    "Vomiting",
+  "Liver Cancer": [
+    "Abdominal pain (RUQ)",
+    "Jaundice (yellowing of skin/eyes)",
+    "Unexplained weight loss",
     "Loss of appetite",
-    "Increased heart rate"
+    "Nausea/vomiting",
+    "Abdominal swelling (ascites)",
+    "Easy bruising/bleeding (coagulopathy)"
   ],
-  "Abdominal Injury": [
-    "Abdominal pain",
-    "Tenderness",
-    "Bruising",
-    "Swelling",
-    "Difficulty breathing",
-    "Nausea",
-    "Vomiting",
-    "Changes in bowel sounds"
+  "Atelectasis": [
+    "Difficulty breathing (dyspnea)",
+    "Rapid, shallow breathing (tachypnea)",
+    "Chest pain (pleuritic—worsens with deep breaths)",
+    "Cough (sometimes with sputum)",
+    "Low oxygen saturation (hypoxemia)"
+  ],
+  "Ectopic Pregnancy": [
+    "Vaginal bleeding (often scant, dark)",
+    "Abdominal pain (sharp, unilateral—rupture causes generalized pain)",
+    "Shoulder pain (referred pain from diaphragmatic irritation)",
+    "Dizziness/fainting (signs of hypovolemia)",
+    "Positive pregnancy test with absent intrauterine gestational sac on ultrasound"
   ],
   "Acute Pancreatitis": [
-    "Severe upper abdominal pain",
-    "Nausea",
-    "Vomiting",
+    "Severe epigastric pain (radiating to back)",
+    "Nausea/vomiting (unrelieved by vomiting)",
     "Fever",
-    "Rapid pulse",
-    "Swollen and tender abdomen",
-    "Jaundice"
-  ],
-  "Thrombophlebitis": [
-    "Redness",
-    "Warmth",
-    "Swelling",
-    "Tenderness along a vein",
-    "Pain or discomfort",
-    "Skin discoloration",
-    "Visible veins"
-  ],
-  "Asthma": [
-    "Recurrent episodes of wheezing",
-    "Shortness of breath",
-    "Chest tightness",
-    "Coughing, especially at night"
-  ],
-  "Restless Leg Syndrome": [
-    "Uncomfortable sensation in legs",
-    "Urge to move legs for relief",
-    "Symptoms worse in evening or night"
-  ],
-  "Emphysema": [
-    "Shortness of breath",
-    "Chronic cough",
-    "Fatigue",
-    "Wheezing"
+    "Tachycardia",
+    "Abdominal tenderness/guarding",
+    "Grey-Turner’s sign (flank bruising) or Cullen’s sign (periumbilical bruising)"
   ],
   "Pulmonary Embolism": [
-    "Sudden shortness of breath",
-    "Chest pain",
-    "Rapid heart rate",
-    "Coughing (sometimes with blood)"
-  ],
-  "Bronchitis": [
-    "Cough",
-    "Sputum production",
-    "Shortness of breath",
-    "Chest discomfort"
-  ],
-  "Chronic Obstructive Pulmonary Disease (COPD)": [
-    "Chronic cough",
-    "Shortness of breath",
-    "Frequent respiratory infections",
-    "Fatigue"
-  ],
-  "Laryngitis": [
-    "Hoarseness",
-    "Loss of voice",
-    "Sore throat",
-    "Dry cough"
-  ],
-  "Pneumonia": [
-    "Fever",
-    "Cough",
-    "Shortness of breath",
-    "Chest pain",
-    "Fatigue"
-  ],
-  "Tuberculosis": [
-    "Persistent cough",
-    "Weight loss",
-    "Fever",
-    "Night sweats"
-  ],
-  "Lung Cancer": [
-    "Persistent cough",
-    "Chest pain",
-    "Weight loss",
-    "Shortness of breath",
-    "Coughing up blood"
-  ],
-  "Pulmonary Fibrosis": [
-    "Shortness of breath",
-    "Dry cough",
-    "Fatigue",
-    "Unexplained weight loss"
-  ],
-  "Sleep Apnea": [
-    "Loud snoring",
-    "Episodes of breathing cessation during sleep",
-    "Daytime sleepiness",
-    "Morning headaches"
-  ],
-  "Bronchiectasis": [
-    "Chronic cough",
-    "Sputum production",
-    "Recurrent lung infections"
-  ],
-  "Pulmonary Hypertension": [
-    "Shortness of breath",
-    "Fatigue",
-    "Chest pain",
-    "Swelling in legs"
-  ],
-  "Cystic Fibrosis": [
-    "Persistent cough",
-    "Frequent lung infections",
-    "Poor growth",
-    "Salty-tasting skin"
+    "Sudden shortness of breath (dyspnea)",
+    "Pleuritic chest pain (worsens with inspiration)",
+    "Hemoptysis (coughing up blood)",
+    "Tachycardia",
+    "Syncope (in massive PE)",
+    "Leg swelling (if DVT present)"
   ],
   "Postpartum Depression": [
-    "Persistent feelings of sadness",
-    "Emptiness or hopelessness",
-    "Frequent crying",
-    "Irritability",
-    "Loss of interest"
+    "Persistent sadness/hopelessness",
+    "Excessive crying",
+    "Irritability/anger",
+    "Loss of interest in activities",
+    "Fatigue",
+    "Changes in appetite/sleep",
+    "Thoughts of harming self/baby"
   ],
   "Coronary Atherosclerosis": [
-    "Chest pain or discomfort (angina)",
-    "Shortness of breath",
+    "Chest pain (angina—pressure/squeezing, radiating to arm/jaw)",
+    "Shortness of breath (dyspnea on exertion)",
     "Fatigue",
-    "Irregular heartbeat",
-    "Dizziness",
+    "Palpitations",
+    "Diaphoresis (cold sweats)",
     "Nausea"
-  ],
-  "Spondylitis": [
-    "Chronic back pain and stiffness",
-    "Pain worse in the morning or after inactivity",
-    "Limited range of motion"
-  ],
-  "Pituitary Adenoma": [
-    "Headaches",
-    "Vision problems (blurred vision or loss of peripheral vision)",
-    "Hormonal imbalances"
-  ],
-  "Uterine Fibroids": [
-    "Heavy or prolonged menstrual periods",
-    "Pelvic pain or pressure",
-    "Frequent urination",
-    "Difficulty emptying bladder"
-  ],
-  "Idiopathic Nonmenstrual Bleeding": [
-    "Abnormal vaginal bleeding outside menstrual period",
-    "Unpredictable bleeding episodes",
-    "Bleeding between periods"
-  ],
-  "Chalazion": [
-    "Painful red lump or swelling on eyelid",
-    "Usually upper eyelid",
-    "Sensitivity to light",
-    "Blurred vision"
-  ],
-  "Ovarian Torsion": [
-    "Sudden severe abdominal or pelvic pain on one side",
-    "Sharp or stabbing pain",
-    "Nausea",
-    "Vomiting",
-    "Fever"
-  ],
-  "Vaginal Yeast Infection": [
-    "Itching and irritation in vagina and vulva",
-    "Redness and swelling of vulva",
-    "White, thick, clumpy discharge"
-  ],
-  "Mastoiditis": [
-    "Ear pain (behind the ear)",
-    "Swelling and redness behind the ear",
-    "Fever",
-    "Hearing loss"
-  ],
-  "Lung Contusion": [
-    "Chest pain (sharp or dull)",
-    "Difficulty breathing or shortness of breath",
-    "Rapid or shallow breathing",
-    "Cough"
-  ],
-  "Hypertrophic Obstructive Cardiomyopathy (HOCM)": [
-    "Shortness of breath during physical activity",
-    "Chest pain or discomfort",
-    "Dizziness",
-    "Fainting"
-  ],
-  "Pulmonary Eosinophilia": [
-    "Cough",
-    "Shortness of breath",
-    "Wheezing",
-    "Chest pain",
-    "Fever",
-    "Night sweats",
-    "Fatigue",
-    "Weight loss"
-  ],
-  "Corneal Disorder": [
-    "Blurred or hazy vision",
-    "Eye pain or discomfort",
-    "Redness or irritation of the eye",
-    "Excessive tearing"
-  ],
-  "Foreign Body in the Gastrointestinal Tract": [
-    "Abdominal pain or discomfort",
-    "Difficulty swallowing",
-    "Choking or gagging",
-    "Drooling",
-    "Nausea or vomiting"
-  ],
-  "Endophthalmitis": [
-    "Eye pain",
-    "Redness and swelling",
-    "Blurred vision",
-    "Decreased vision",
-    "Floaters"
-  ],
-  "Achalasia": [
-    "Difficulty swallowing"
-  ],
-  "Conductive Hearing Loss": [
-    "Reduced hearing sensitivity",
-    "Muffled or blocked sound"
-  ],
-  "Abdominal Hernia": [
-    "Visible bulge or swelling",
-    "Discomfort or pain"
-  ],
-  "Marijuana Abuse": [
-    "Impaired memory and cognition",
-    "Altered judgment",
-    "Anxiety"
-  ],
-  "Cryptococcosis": [
-    "Headache",
-    "Fever",
-    "Fatigue",
-    "Cough",
-    "Meningitis symptoms",
-    "Pneumonia symptoms"
-  ],
-  "Obesity": [
-    "Excessive body weight",
-    "Increased risk of chronic conditions"
-  ],
-  "Indigestion": [
-    "Abdominal pain",
-    "Bloating",
-    "Heartburn",
-    "Nausea",
-    "Acidic taste"
-  ],
-  "Bursitis": [
-    "Joint pain",
-    "Swelling",
-    "Tenderness",
-    "Limited range of motion"
-  ],
-  "Esophageal Cancer": [
-    "Difficulty swallowing",
-    "Unintentional weight loss",
-    "Chest pain",
-    "Hoarseness"
-  ],
-  "Pulmonary Congestion": [
-    "Shortness of breath",
-    "Cough",
-    "Wheezing",
-    "Fatigue",
-    "Chest discomfort or tightness"
-  ],
-  "Juvenile Rheumatoid Arthritis": [
-    "Joint pain",
-    "Swelling",
-    "Stiffness",
-    "Limited range of motion",
-    "Fever",
-    "Rash"
-  ],
-  "Actinic Keratosis": [
-    "Rough, scaly patches on the skin",
-    "Usually in sun-exposed areas"
-  ],
-  "Acute Otitis Media": [
-    "Ear pain",
-    "Fever",
-    "Fluid drainage from ear",
-    "Hearing loss or muffled hearing"
-  ],
-  "Astigmatism": [
-    "Blurred or distorted vision",
-    "Eye strain",
-    "Headaches",
-    "Uneven curvature of cornea"
-  ],
-  "Tuberous Sclerosis": [
-    "Benign tumors in various organs",
-    "Seizures",
-    "Developmental delays",
-    "Skin abnormalities"
-  ],
-  "Empyema": [
-    "Fever",
-    "Chest pain",
-    "Productive cough with foul-smelling or bloody sputum"
-  ],
-  "Presbycusis": [
-    "Gradual hearing loss",
-    "Difficulty hearing high-pitched sounds",
-    "Speech sounds muffled or unclear"
-  ],
-  "Neonatal Jaundice": [
-    "Yellowing of skin and eyes",
-    "Pale stools",
-    "Dark urine"
-  ],
-  "Dislocation of the Elbow": [
-    "Severe pain",
-    "Visible deformity",
-    "Swelling",
-    "Inability to move elbow",
-    "Numbness or tingling in hand"
-  ],
-  "Spondylosis": [
-    "Neck or back pain",
-    "Stiffness",
-    "Limited range of motion",
-    "Numbness or weakness in extremities"
-  ],
-  "Herpangina": [
-    "Sore throat",
-    "Fever",
-    "Painful sores or blisters in mouth and throat",
-    "Difficulty swallowing",
-    "Loss of appetite"
-  ],
-  "Poisoning due to Antidepressants": [
-    "Nausea",
-    "Vomiting",
-    "Drowsiness",
-    "Dizziness",
-    "Confusion",
-    "Seizures",
-    "Changes in heart rate",
-    "Low blood pressure"
-  ],
-  "Infection of Open Wound": [
-    "Redness",
-    "Swelling",
-    "Warmth",
-    "Pain or tenderness at wound site",
-    "Pus or drainage",
-    "Fever"
-  ],
-  "Protein Deficiency": [
-    "Muscle wasting",
-    "Fatigue",
-    "Weakness",
-    "Delayed wound healing",
-    "Swelling of limbs",
-    "Hair loss",
-    "Impaired immunity"
-  ],
-  "Myoclonus": [
-    "Sudden, brief muscle contractions or jerks",
-    "Often affecting arms, legs, or face"
-  ],
-  "Bone Spur of the Calcaneus": [
-    "Heel pain (especially when walking or standing)",
-    "Tenderness",
-    "Swelling",
-    "Inflammation of surrounding tissues"
-  ],
-  "Von Willebrand Disease": [
-    "Easy or excessive bruising",
-    "Prolonged or excessive bleeding from cuts",
-    "Frequent nosebleeds"
   ]
-
-};
+}

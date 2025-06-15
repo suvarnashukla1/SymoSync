@@ -1,416 +1,132 @@
-import React, { Component } from "react";
-import "./Patient.css";
-class Patient2 extends Component {
-  state = {
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import Lab from "../DHIlab/DHIlab.jsx";
+
+function Patient2(props) {
+  const navigate = useNavigate();
+
+  const [answers, setAnswers] = useState({
     question_1: "",
     question_2: "",
     question_3: "",
     question_4: "",
     question_5: "",
     question_6: "",
-    next_button_available: "",
-    all_answer: [],
+  });
+
+  const checkAllAnswered = () => {
+    return Object.values(answers).every((val) => val !== "");
   };
-  handleOnChange = (e) => {
-    let state = this.state;
-    let nextButton = () => {
-      return state.question_1 !== "" && state.question_2 !== "" && state.question_2 !== "" && state.question_3 !== "" && state.question_4 !== "" && state.question_5 !== "" && state.question_6 !== ""
-        ? "Available"
-        : "Not available";
-    };
 
-    console.log(e);
+  const setObject = () => [
+    { question: "Patient is overweight or obese", answer: answers.question_1 },
+    { question: "Patient smokes cigarettes", answer: answers.question_2 },
+    { question: "Patient has been recently injured", answer: answers.question_3 },
+    { question: "Patient has high cholesterol", answer: answers.question_4 },
+    { question: "Patient has hypertension", answer: answers.question_5 },
+    { question: "Patient has diabetes", answer: answers.question_6 },
+  ];
 
-    let setObject = () => {
-      return [
-        {
-          question: "Patient is overweight or obese",
-          answer: this.state.question_1,
-        },
-        {
-          question: "Patient smokes cigarettes",
-          answer: this.state.question_2,
-        },
-        {
-          question: "Patient has been recently injured",
-          answer: this.state.question_3,
-        },
-        {
-          question: "Patient has high cholesterol",
-          answer: this.state.question_4,
-        },
-        {
-          question: "Patient has hypertension",
-          answer: this.state.question_5,
-        },
-        {
-          question: "Patient has diabetes",
-          answer: this.state.question_6,
-        },
-      ];
-    };
-    switch (e.target.className) {
-      case "usa-radio__input I_am_overweight_or_obese":
-        this.setState(
-          {
-            question_1: e.target.value,
-          },
-          () => {
-            this.props.callback(setObject());
-          }
-        );
-        return this.setState({
-          all_answer: setObject(),
-        });
-      case "usa-radio__input I smoke cigarettes":
-        this.setState(
-          {
-            question_2: e.target.value,
-          },
-          () => {
-            this.props.callback(setObject(), nextButton());
-          }
-        );
-        return this.setState({
-          all_answer: setObject(),
-        });
-      case "usa-radio__input I have been recently injured":
-        this.setState(
-          {
-            question_3: e.target.value,
-          },
-          () => {
-            this.props.callback(setObject(), nextButton());
-          }
-        );
-        return this.setState({
-          all_answer: setObject(),
-        });
-      case "usa-radio__input I have high cholesterol":
-        this.setState(
-          {
-            question_4: e.target.value,
-          },
-          () => {
-            this.props.callback(setObject(), nextButton());
-          }
-        );
-        return this.setState({
-          all_answer: setObject(),
-        });
-      case "usa-radio__input I have hypertension":
-        console.log(e.target.value);
-        this.setState(
-          {
-            question_5: e.target.value,
-          },
-          () => {
-            this.props.callback(setObject(), nextButton());
-          }
-        );
-        return this.setState({
-          all_answer: setObject(),
-        });
+  const handleOnChange = (questionKey, value) => {
+    const updatedAnswers = { ...answers, [questionKey]: value };
+    setAnswers(updatedAnswers);
 
-      case "usa-radio__input I have diabetes":
-        this.setState(
-          {
-            question_6: e.target.value,
-          },
-          () => {
-            this.props.callback(setObject(), nextButton());
-          }
-        );
-        return this.setState({
-          all_answer: setObject(),
-        });
+    const allAnswered = Object.values(updatedAnswers).every((val) => val !== "");
+    const all_answer = [
+      { question: "Patient is overweight or obese", answer: updatedAnswers.question_1 },
+      { question: "Patient smokes cigarettes", answer: updatedAnswers.question_2 },
+      { question: "Patient has been recently injured", answer: updatedAnswers.question_3 },
+      { question: "Patient has high cholesterol", answer: updatedAnswers.question_4 },
+      { question: "Patient has hypertension", answer: updatedAnswers.question_5 },
+      { question: "Patient has diabetes", answer: updatedAnswers.question_6 },
+    ];
+
+    if (props.callback) {
+      props.callback(all_answer, allAnswered ? "Available" : "Not available");
     }
   };
 
-  render() {
-    return (
-      <div id="Patient2" className="tablet:grid-col padding-x-2">
-        <div className="width-full flex-column flex-align-center">
-          <h2 style={{ marginBottom: "15px" }}> Please check all the statement below that applies you</h2>
-          <p> Select one answer in each row </p>
-        </div>
-        <div className="radioButtonDiv ">
-          <h3>I am overweight</h3>
-          <form className="usa-form FormElement">
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I_am_overweight_or_obese"
-                onChange={this.handleOnChange}
-                id="overweight_Yes"
-                type="radio"
-                checked={this.state.question_1 === "Yes"}
-                value={"Yes"}
-                name="overweight"
-              />
-              <label className="usa-radio__label" for="overweight_Yes">
-                Yes
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I_am_overweight_or_obese"
-                onChange={this.handleOnChange}
-                id="overweight_No"
-                type="radio"
-                checked={this.state.question_1 === "No"}
-                value={"No"}
-                name="overweight"
-              />
-              <label className="usa-radio__label" for="overweight_No">
-                No
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I_am_overweight_or_obese"
-                onChange={this.handleOnChange}
-                id="overweight_doesno"
-                type="radio"
-                checked={this.state.question_1 === "Patient doesn't know"}
-                value={"Patient doesn't know"}
-                name="overweight"
-              />
-              <label className="usa-radio__label" for="overweight_doesno">
-                I don't know
-              </label>
-            </div>
-          </form>
-        </div>
-        <div className="radioButtonDiv">
-          <h3>I smoke cigarettes</h3>
-          <form className="usa-form FormElement">
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I smoke cigarettes"
-                onChange={this.handleOnChange}
-                id="cigarettes_yes"
-                type="radio"
-                checked={this.state.question_2 === "Yes"}
-                value={"Yes"}
-                name="cigarettes"
-              />
-              <label className="usa-radio__label" for="cigarettes_yes">
-                Yes
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I smoke cigarettes"
-                onChange={this.handleOnChange}
-                id="cigarettes_no"
-                type="radio"
-                checked={this.state.question_2 === "No"}
-                value={"No"}
-                name="cigarettes"
-              />
-              <label className="usa-radio__label" for="cigarettes_no">
-                No
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I smoke cigarettes"
-                onChange={this.handleOnChange}
-                id="cigarettes_doesno"
-                type="radio"
-                checked={this.state.question_2 === "Patient doesn't know"}
-                value={"Patient doesn't know"}
-                name="cigarettes"
-              />
-              <label className="usa-radio__label" for="cigarettes_doesno">
-                I don't know
-              </label>
-            </div>
-          </form>
-        </div>
-        <div className="radioButtonDiv">
-          <h3>I have been recently injured</h3>
-          <form className="usa-form FormElement">
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have been recently injured"
-                onChange={this.handleOnChange}
-                id="injured_yes"
-                type="radio"
-                checked={this.state.question_3 === "Yes"}
-                value={"Yes"}
-                name="injured"
-              />
-              <label className="usa-radio__label" for="injured_yes">
-                Yes
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have been recently injured"
-                onChange={this.handleOnChange}
-                id="injured_no"
-                type="radio"
-                checked={this.state.question_3 === "No"}
-                value={"No"}
-                name="injured"
-              />
-              <label className="usa-radio__label" for="injured_no">
-                No
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have been recently injured"
-                onChange={this.handleOnChange}
-                id="injured_doesno"
-                type="radio"
-                checked={this.state.question_3 === "Patient doesn't know"}
-                value={"Patient doesn't know"}
-                name="injured"
-              />
-              <label className="usa-radio__label" for="injured_doesno">
-                I don't know
-              </label>
-            </div>
-          </form>
-        </div>
-        <div className="radioButtonDiv">
-          <h3>I have high cholesterol</h3>
-          <form className="usa-form FormElement">
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have high cholesterol"
-                onChange={this.handleOnChange}
-                id="cholesterol_yes"
-                type="radio"
-                checked={this.state.question_4 === "Yes"}
-                value={"Yes"}
-                name="cholesterol"
-              />
-              <label className="usa-radio__label" for="cholesterol_yes">
-                Yes
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have high cholesterol"
-                onChange={this.handleOnChange}
-                id="cholesterol_no"
-                type="radio"
-                checked={this.state.question_4 === "No"}
-                value={"No"}
-                name="cholesterol"
-              />
-              <label className="usa-radio__label" for="cholesterol_no">
-                No
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have high cholesterol"
-                onChange={this.handleOnChange}
-                id="cholesterol_doesno"
-                type="radio"
-                checked={this.state.question_4 === "Patient doesn't know"}
-                value={"Patient doesn't know"}
-                name="cholesterol"
-              />
-              <label className="usa-radio__label" for="cholesterol_doesno">
-                I don't know
-              </label>
-            </div>
-          </form>
-        </div>
-        <div className="radioButtonDiv">
-          <h3>I have hypertensionl</h3>
-          <form className="usa-form FormElement">
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have hypertension"
-                onChange={this.handleOnChange}
-                id="hypertension_yes"
-                type="radio"
-                checked={this.state.question_5 === "Yes"}
-                value={"Yes"}
-                name="hypertensionl"
-              />
-              <label className="usa-radio__label" for="hypertension_yes">
-                Yes
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have hypertension"
-                onChange={this.handleOnChange}
-                id="hypertension_no"
-                type="radio"
-                checked={this.state.question_5 === "No"}
-                value={"No"}
-                name="hypertensionl"
-              />
-              <label className="usa-radio__label" for="hypertension_no">
-                No
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have hypertension"
-                onChange={this.handleOnChange}
-                id="hypertension_doesno"
-                type="radio"
-                checked={this.state.question_5 === "Patient doesn't know"}
-                value={"Patient doesn't know"}
-                name="hypertensionl"
-              />
-              <label className="usa-radio__label" for="hypertension_doesno">
-                I don't know
-              </label>
-            </div>
-          </form>
-        </div>
-        <div className="radioButtonDiv">
-          <h3>I have diabetes</h3>
-          <form className="usa-form FormElement">
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have diabetes"
-                onChange={this.handleOnChange}
-                id="diabetes_yes"
-                type="radio"
-                checked={this.state.question_6 === "Yes"}
-                value={"Yes"}
-                name="diabetes"
-              />
-              <label className="usa-radio__label" for="diabetes_yes">
-                Yes
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input className="usa-radio__input I have diabetes" onChange={this.handleOnChange} id="diabetes_no" type="radio" checked={this.state.question_6 === "No"} value={"No"} name="diabetes" />
-              <label className="usa-radio__label" for="diabetes_no">
-                No
-              </label>
-            </div>
-            <div className="usa-radio margin-x-1">
-              <input
-                className="usa-radio__input I have diabetes"
-                onChange={this.handleOnChange}
-                id="diabetes_doesno"
-                type="radio"
-                checked={this.state.question_6 === "Patient doesn't know"}
-                value={"Patient doesn't know"}
-                name="diabetes"
-              />
-              <label className="usa-radio__label" for="diabetes_doesno">
-                I don't know
-              </label>
-            </div>
-          </form>
-        </div>
+  const handleBackClick = () => {
+    navigate('/Patient1');
+  };
+
+  const handleNextClick = () => {
+    navigate('/Symptom');
+  };
+
+  const questions = [
+    { key: 'question_1', text: 'I am overweight or obese' },
+    { key: 'question_2', text: 'I smoke cigarettes' },
+    { key: 'question_3', text: 'I have been recently injured' },
+    { key: 'question_4', text: 'I have high cholesterol' },
+    { key: 'question_5', text: 'I have hypertension' },
+    { key: 'question_6', text: 'I have diabetes' }
+  ];
+
+  return (
+    <div>
+        <div className="mega"><Lab/></div>
+    <div style={{
+      padding: '20px',
+      border: '2px solid black',
+      borderRadius: '8px',
+      margin: '20px',
+      backgroundColor:'white',
+    }}>
+       
+      <div style={{ textAlign: 'center', marginBottom: '30px' }}>
+        <h2>Please check all the statements below that apply to you</h2>
+        <p>Select one answer in each row</p>
       </div>
-    );
-  }
+
+      <div style={{ display: 'table', width: '100%', maxWidth: '800px', margin: '20px auto' }}>
+        <div style={{ display: 'table-row', fontWeight: 'bold', marginBottom: '15px' }}>
+          <div style={{ display: 'table-cell', padding: '10px', width: '50%' }}>Question</div>
+          <div style={{ display: 'table-cell', padding: '10px', textAlign: 'center', width: '16.67%' }}>Yes</div>
+          <div style={{ display: 'table-cell', padding: '10px', textAlign: 'center', width: '16.67%' }}>No</div>
+          <div style={{ display: 'table-cell', padding: '10px', textAlign: 'center', width: '16.67%' }}>I don't know</div>
+        </div>
+        {questions.map((question) => (
+          <div key={question.key} style={{ display: 'table-row', marginBottom: '10px' }}>
+            <div style={{ display: 'table-cell', padding: '15px 10px', verticalAlign: 'middle' }}>{question.text}</div>
+            <div style={{ display: 'table-cell', padding: '15px 10px', textAlign: 'center', verticalAlign: 'middle' }}>
+              <input
+                type="radio"
+                name={question.key}
+                value="Yes"
+                checked={answers[question.key] === "Yes"}
+                onChange={() => handleOnChange(question.key, "Yes")}
+              />
+            </div>
+            <div style={{ display: 'table-cell', padding: '15px 10px', textAlign: 'center', verticalAlign: 'middle' }}>
+              <input
+                type="radio"
+                name={question.key}
+                value="No"
+                checked={answers[question.key] === "No"}
+                onChange={() => handleOnChange(question.key, "No")}
+              />
+            </div>
+            <div style={{ display: 'table-cell', padding: '15px 10px', textAlign: 'center', verticalAlign: 'middle' }}>
+              <input
+                type="radio"
+                name={question.key}
+                value="Patient doesn't know"
+                checked={answers[question.key] === "Patient doesn't know"}
+                onChange={() => handleOnChange(question.key, "Patient doesn't know")}
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+
+      <div style={{ textAlign: 'center', marginTop: '30px', display: 'flex', justifyContent: 'center', gap: '16px' }}>
+        <button onClick={handleBackClick}>Back</button>
+        <button onClick={handleNextClick} disabled={!checkAllAnswered()}>Next</button>
+      </div>
+    </div>
+    </div>
+  );
 }
 
 export default Patient2;

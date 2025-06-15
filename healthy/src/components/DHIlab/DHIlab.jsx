@@ -10,6 +10,9 @@ class DHIlabLogo extends Component {
           alt="DHI Lab Logo"
           className="log"
         />
+       <h1 style={{color: '#FF6B9E',fontSize: '2.5rem',}}>Symo-sync</h1>
+        {/* <h5>Because your imagination is scarier than WebMD.</h5> */}
+        <h3 style={{color: '#37b1ea'}}>Probability over panic.</h3>
       </React.Fragment>
     );
   }

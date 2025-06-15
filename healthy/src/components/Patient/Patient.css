@@ -1,28 +1,163 @@
-#Home {
-  line-height: 1.7;
-}
-#Home h2 {
-  color: #005ea2;
-  transition: ease 0.2s;
+/* Patient.css - Black border box styling */
+
+.patient-container {
+  border: 3px solid #000; /* Black border */
+  border-radius: 12px;
+  padding: 40px;
+  margin: 30px auto;
+  max-width: 700px;
+  width: 90%;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); /* Subtle black shadow */
+  text-align: center; /* Center all content */
 }
 
-#Patient2 {
-  line-height: 1.7;
+.patient-section {
+  margin-bottom: 35px;
+  padding: 20px 0;
 }
-.FormElement {
+
+.patient-container h2 {
+  margin: 15px 0;
+  font-size: 48px; /* Larger font */
+  font-weight: bold;
+  color: #000;
+  text-align: center;
+}
+
+.patient-container p {
+  margin-bottom: 20px;
+  font-size: 24px; /* Larger font */
+  font-weight: bold;
+  line-height: 1.5;
+  color: #333;
+}
+
+.usa-label {
+  font-weight: 600;
+  font-size: 22px; /* Larger font */
+  margin-bottom: 15px;
+  display: block;
+  color: #333;
+}
+
+.usa-range {
+  width: 80%;
+  margin: 20px auto;
+  height: 8px;
+  border-radius: 4px;
+  appearance: none;
+  display: block;
+}
+
+.usa-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+}
+
+.usa-range::-moz-range-thumb {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  border: none;
+}
+
+.usa-radio {
+  margin: 15px 0;
   display: flex;
-  justify-content: center;
-  align-items: left;
+  align-items: center;
+  justify-content: center; 
 }
-.radioButtonDiv {
+.patient-container {
+  border: 2px solid #000; 
+  border-radius: 8px;
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+
+.patient-section {
+  margin-bottom: 25px;
+  padding: 15px 0;
+}
+
+.patient-section:not(:last-child) {
+  border-bottom: 1px solid #ddd;
+}
+
+.patient-container h2 {
+  margin: 10px 0;
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+}
+
+.patient-container p {
+  margin-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.usa-label {
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 10px;
+  display: block;
+}
+
+.usa-range {
+  width: 100%;
+  margin: 15px 0;
+  height: 6px;
+  background: #ddd;
+  border-radius: 3px;
+  appearance: none;
+}
+
+.usa-range::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+}
+
+.usa-range::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #000;
+  cursor: pointer;
+  border: none;
+}
+
+.usa-radio {
+  margin: 10px 0;
   display: flex;
-  justify-content: space-between;
-  align-items: left;
+  align-items: center;
 }
-.usa-radio__label{
- margin-right: 20px;
-  justify-content: space-between;
+
+.usa-radio__input {
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
 }
+
+.usa-radio__label {
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
 @media (max-width: 63.938em) {
   .radioButtonDiv {
 	display: flex;
