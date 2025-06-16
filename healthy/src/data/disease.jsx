@@ -559,5 +559,404 @@ export const Diseases = {
     "Palpitations",
     "Diaphoresis (cold sweats)",
     "Nausea"
+  ],
+  "Spondylitis": [
+    "Chronic back pain and stiffness",
+    "Morning stiffness or stiffness after periods of inactivity",
+    "Limited range of motion"
+  ],
+  "Pituitary Adenoma": [
+    "Headaches",
+    "Vision problems (blurred vision or loss of peripheral vision)",
+    "Hormonal imbalances"
+  ],
+  "Uterine Fibroids": [
+    "Heavy or prolonged menstrual periods",
+    "Pelvic pain or pressure",
+    "Frequent urination",
+    "Difficulty emptying bladder"
+  ],
+  "Idiopathic Nonmenstrual Bleeding": [
+    "Abnormal vaginal bleeding outside of menstrual period",
+    "Unpredictable bleeding episodes",
+    "Bleeding between periods"
+  ],
+  "Chalazion": [
+    "Painful, red lump or swelling on eyelid (usually upper)",
+    "Sensitivity to light",
+    "Blurred vision"
+  ],
+  "Ovarian Torsion": [
+    "Sudden and severe abdominal or pelvic pain on one side",
+    "Sharp or stabbing pain",
+    "Nausea",
+    "Vomiting",
+    "Fever"
+  ],
+  "Vaginal Yeast Infection": [
+    "Itching and irritation in vagina and vulva",
+    "Redness and swelling of vulva",
+    "White, thick, clumpy discharge"
+  ],
+  "Mastoiditis": [
+    "Ear pain (particularly behind the ear)",
+    "Swelling and redness of ear or area behind ear"
+  ],
+  "Lung Contusion": [
+    "Chest pain (sharp or dull)",
+    "Difficulty breathing or shortness of breath",
+    "Rapid or shallow breathing"
+  ],
+  "Hypertrophic Obstructive Cardiomyopathy (HOCM)": [
+    "Shortness of breath (especially during physical activity)",
+    "Chest pain or discomfort",
+    "Dizziness"
+  ],
+  "Pulmonary Eosinophilia": [
+    "Cough",
+    "Shortness of breath",
+    "Wheezing",
+    "Chest pain",
+    "Fever",
+    "Night sweats",
+    "Fatigue",
+    "Weight loss",
+    "Elevated eosinophils"
+  ],
+  "Corneal Disorder": [
+    "Blurred or hazy vision",
+    "Eye pain or discomfort",
+    "Redness or irritation of eye",
+    "Excessive tearing"
+  ],
+  "Foreign Body in Gastrointestinal Tract": [
+    "Abdominal pain or discomfort",
+    "Difficulty swallowing",
+    "Choking or gagging",
+    "Drooling",
+    "Nausea or vomiting"
+  ],
+  "Endophthalmitis": [
+    "Eye pain",
+    "Redness",
+    "Swelling",
+    "Blurred vision",
+    "Decreased vision",
+    "Floaters (dark spots or cobwebs in vision)"
+  ],
+  "Achalasia": [
+    "Difficulty swallowing"
+  ],
+  "Conductive Hearing Loss": [
+    "Reduced hearing sensitivity",
+    "Muffled or blocked sound"
+  ],
+  "Abdominal Hernia": [
+    "Visible bulge or swelling",
+    "Discomfort or pain"
+  ],
+  "Marijuana Abuse": [
+    "Impaired memory and cognition",
+    "Altered judgment",
+    "Anxiety"
+  ],
+  "Cryptococcosis": [
+    "Headache",
+    "Fever",
+    "Fatigue",
+    "Cough",
+    "Meningitis",
+    "Pneumonia"
+  ],
+  "Obesity": [
+    "Excessive body weight",
+    "Increased risk of chronic conditions"
+  ],
+  "Indigestion": [
+    "Abdominal pain",
+    "Bloating",
+    "Heartburn",
+    "Nausea",
+    "Acidic taste"
+  ],
+  "Bursitis": [
+    "Joint pain",
+    "Swelling",
+    "Tenderness",
+    "Limited range of motion"
+  ],
+  "Esophageal Cancer": [
+    "Difficulty swallowing",
+    "Unintentional weight loss",
+    "Chest pain",
+    "Hoarseness"
+  ],
+  "Pulmonary Congestion": [
+    "Shortness of breath",
+    "Cough",
+    "Wheezing",
+    "Fatigue",
+    "Chest discomfort or tightness"
+  ],
+  "Juvenile Rheumatoid Arthritis": [
+    "Joint pain",
+    "Swelling",
+    "Stiffness",
+    "Limited range of motion",
+    "Fever",
+    "Rash"
+  ],
+  "Actinic Keratosis": [
+    "Rough, scaly patches on skin",
+    "Usually in sun-exposed areas"
+  ],
+  "Acute Otitis Media": [
+    "Ear pain",
+    "Fever",
+    "Fluid drainage from ear",
+    "Hearing loss or muffled hearing in affected ear"
+  ],
+  "Astigmatism": [
+    "Blurred or distorted vision",
+    "Eye strain",
+    "Headaches",
+    "Uneven curvature of cornea"
+  ],
+  "Tuberous Sclerosis": [
+    "Benign tumors in various organs",
+    "Seizures",
+    "Developmental delays",
+    "Skin abnormalities"
+  ],
+  "Empyema": [
+    "Fever",
+    "Chest pain",
+    "Productive cough with foul-smelling or bloody sputum"
+  ],
+  "Presbycusis": [
+    "Gradual hearing loss",
+    "Difficulty hearing high-pitched sounds",
+    "Speech sounds muffled or unclear"
+  ],
+  "Neonatal Jaundice": [
+    "Yellowing of skin and eyes",
+    "Pale stools",
+    "Dark urine"
+  ],
+  "Dislocation of the Elbow": [
+    "Severe pain",
+    "Visible deformity",
+    "Swelling",
+    "Inability to move elbow",
+    "Numbness or tingling in hand"
+  ],
+  "Spondylosis": [
+    "Neck or back pain",
+    "Stiffness",
+    "Limited range of motion",
+    "Numbness or weakness in extremities"
+  ],
+  "Herpangina": [
+    "Sore throat",
+    "Fever",
+    "Painful sores or blisters in mouth and throat",
+    "Difficulty swallowing",
+    "Loss of appetite"
+  ],
+  "Poisoning due to Antidepressants": [
+    "Nausea",
+    "Vomiting",
+    "Drowsiness",
+    "Dizziness",
+    "Confusion",
+    "Seizures",
+    "Changes in heart rate",
+    "Low blood pressure"
+  ],
+  "Infection of Open Wound": [
+    "Redness",
+    "Swelling",
+    "Warmth",
+    "Pain or tenderness at wound site",
+    "Pus or drainage from wound",
+    "Fever"
+  ],
+  "Protein Deficiency": [
+    "Muscle wasting",
+    "Fatigue",
+    "Weakness",
+    "Delayed wound healing",
+    "Swelling of limbs",
+    "Hair loss",
+    "Impaired immune function"
+  ],
+  "Myoclonus": [
+    "Sudden, brief muscle contractions or jerks",
+    "Often affecting arms, legs, or face"
+  ],
+  "Bone Spur of the Calcaneus": [
+    "Heel pain (especially when walking or standing)",
+    "Tenderness",
+    "Swelling",
+    "Inflammation of surrounding tissues"
+  ],
+  "Von Willebrand Disease": [
+    "Easy or excessive bruising",
+    "Prolonged or excessive bleeding from cuts or injuries",
+    "Frequent nosebleeds"
+  ],
+  "Heart Block": [
+    "Fatigue",
+    "Dizziness",
+    "Fainting",
+    "Chest pain or discomfort",
+    "Shortness of breath",
+    "Irregular heart rhythms"
+  ],
+  "Colonic Polyp": [
+    "Most colonic polyps do not cause symptoms",
+    "Some larger polyps may cause rectal bleeding"
+  ],
+  "Hypospadias": [
+    "Abnormal positioning of urethral opening on underside of penis",
+    "Penile curvature",
+    "Spraying during urination"
+  ],
+  "Magnesium Deficiency": [
+    "Muscle twitches or cramps",
+    "Fatigue",
+    "Weakness",
+    "Loss of appetite",
+    "Nausea",
+    "Vomiting",
+    "Irritability",
+    "Mental confusion"
+  ],
+  "Female Infertility of Unknown Cause": [
+    "Inability to conceive after one year of unprotected intercourse",
+    "Irregular or absent menstrual cycles"
+  ],
+  "Pericarditis": [
+    "Chest pain (sharp and stabbing)",
+    "Pain worsens with deep breaths or lying down",
+    "Fever"
+  ],
+  "Attention Deficit Hyperactivity Disorder (ADHD)": [
+    "Inattention",
+    "Hyperactivity",
+    "Impulsivity"
+  ],
+  "Neuromyelitis Optica": [
+    "Optic neuritis (vision loss, pain with eye movement)",
+    "Transverse myelitis (weakness, numbness, or paralysis)"
+  ],
+  "Pulmonic Valve Disease": [
+    "Fatigue",
+    "Shortness of breath",
+    "Chest pain or discomfort",
+    "Heart palpitations",
+    "Fainting or lightheadedness"
+  ],
+  "Tietze Syndrome": [
+    "Chest pain",
+    "Swelling and tenderness of cartilage connecting ribs to breastbone"
+  ],
+  "Cranial Nerve Palsy": [
+    "Vision changes",
+    "Eye movement abnormalities",
+    "Symptoms depend on specific cranial nerve involved"
+  ],
+  "Conversion Disorder": [
+    "Neurological symptoms unexplained by medical condition",
+    "Paralysis",
+    "Other functional neurological symptoms"
+  ],
+  "Complex Regional Pain Syndrome": [
+    "Severe and chronic pain (often in limbs)",
+    "Associated swelling",
+    "Changes in skin color or temperature"
+  ],
+  "Otosclerosis": [
+    "Hearing loss (gradual and progressive)",
+    "Tinnitus (ringing in ears)",
+    "Dizziness or balance problems"
+  ],
+  "Hypothyroidism": [
+    "Fatigue",
+    "Weight gain",
+    "Sensitivity to cold",
+    "Dry skin",
+    "Constipation",
+    "Depression",
+    "Muscle weakness",
+    "Elevated cholesterol"
+  ],
+  "Primary Insomnia": [
+    "Difficulty falling asleep or staying asleep",
+    "Daytime sleepiness",
+    "Irritability",
+    "Difficulty concentrating"
+  ],
+  "Lice": [
+    "Itching",
+    "Visible presence of lice or nits (eggs) in hair"
+  ],
+  "Vitamin B12 Deficiency": [
+    "Fatigue",
+    "Weakness",
+    "Pale skin",
+    "Shortness of breath",
+    "Tingling or numbness in hands and feet",
+    "Balance problems"
+  ],
+  "Vulvodynia": [
+    "Persistent pain or discomfort in vulva",
+    "Burning",
+    "Stinging",
+    "Rawness",
+    "Itching"
+  ],
+  "Endometriosis": [
+    "Pelvic pain (during menstruation, intercourse, or bowel movements)",
+    "Heavy menstrual bleeding",
+    "Infertility"
+  ],
+  "Vasculitis": [
+    "Inflammation of blood vessels",
+    "Various symptoms depending on affected organs"
+  ],
+  "Concussion": [
+    "Headache",
+    "Dizziness",
+    "Nausea or vomiting",
+    "Confusion",
+    "Memory problems",
+    "Sensitivity to light or noise"
+  ],
+  "Oral Leukoplakia": [
+    "White patches or plaques in mouth",
+    "Often on tongue or inside of cheeks",
+    "Patches cannot be scraped off"
+  ],
+  "Chronic Kidney Disease": [
+    "Fatigue",
+    "Swelling of legs or ankles",
+    "Decreased appetite",
+    "Difficulty concentrating",
+    "Increased urination"
+  ],
+  "Bladder Disorder": [
+    "Frequent urination",
+    "Urgency",
+    "Pelvic pain"
+  ],
+  "Chorioretinitis": [
+    "Eye pain",
+    "Blurred vision",
+    "Sensitivity to light"
+  ],
+  "Priapism": [
+    "Persistent, painful erection"
   ]
+
 }
