@@ -8,8 +8,7 @@
 ## **✨ What It Does**
 
 ### **🔍 Symptom Analysis**
-✅ **Smart Symptom Input** – Enter health symptoms through intuitive interface  
-✅ **Disease Prediction** – AI analyzes symptoms using medical datasets  
+✅ **Smart Symptom Input** – Enter health symptoms through intuitive interface 
 ✅ **High Accuracy Filtering** – Only shows results with 50%+ confidence  
 ✅ **Multiple Conditions** – Identifies various potential diseases  
 
@@ -17,7 +16,6 @@
 ✅ **Gemini AI Powered** – Interactive health consultations  
 ✅ **Natural Conversations** – Ask questions in plain language  
 ✅ **Personalized Advice** – Tailored health recommendations  
-✅ **24/7 Available** – Round-the-clock healthcare assistance  
 
 ## **🛠️ Tech Stack**
 
